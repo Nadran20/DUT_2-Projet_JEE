@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/tomcat/webapps/Projet_JavaEE/WEB-INF/classes/mediatek.jar"/>
+	<classpathentry kind="lib" path="C:/tomcat/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/H2/bin/h2-1.4.200.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

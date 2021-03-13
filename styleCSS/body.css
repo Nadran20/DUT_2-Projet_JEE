@@ -1,0 +1,8 @@
+body {
+    background-image: url("src/bibli_fond.jpg");
+    background-size: 100%;
+}
+
+* {
+    font: italic 17px "Fira Sans", serif;
+}

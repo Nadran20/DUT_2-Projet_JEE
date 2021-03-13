@@ -1,0 +1,5 @@
+<servlet>  
+   <servlet-name>init</servlet-name>  
+   <servlet-class>init.initializeResources</servlet-class>  
+   <load-on-startup>1</load-on-startup>  
+</servlet> 

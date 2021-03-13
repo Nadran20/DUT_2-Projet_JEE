@@ -1,0 +1,54 @@
+form {
+    position: absolute;
+    background: whitesmoke;
+    margin-left: 38%;
+    margin-right: 35%;
+    margin-top: 15%;
+    height: 25%;
+    width: 25%;
+}
+
+#login {
+    position: absolute;
+    top: 22%;
+    margin-left: 10%;
+}
+
+#loginInput {
+    position: absolute;
+    margin-left: 180%;
+}
+
+#pass {
+    position: absolute;
+    top: 42%;
+    margin-left: 10%;
+}
+
+#PassInput {
+    position: absolute;
+    margin-left: 41%;
+}
+
+form button {
+    background-color: rgb(37, 37, 28);
+    position: absolute;
+    padding: 1%;
+    padding-right: 3%;
+    padding-left: 3%;
+    border: none;
+    top: 70%;
+    margin-left: 38%;
+    margin-right: 38%;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+#text {
+    margin-top: 2%;
+    text-align: center;
+    margin-right: 20%;
+    margin-left: 20%;
+}
