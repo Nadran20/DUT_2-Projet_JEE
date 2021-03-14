@@ -18,6 +18,7 @@ public class ServiceDeconnexion extends HttpServlet {
     { 
         response.setContentType("text/html");
         try {
+        	request.getSession().removeAttribute("user");
 	        request.setAttribute("error", "Vous êtes bien déconnecté ");
         	this.getServletContext().getRequestDispatcher( "/index.jsp" ).forward( request, response );
         } catch(Exception e) {

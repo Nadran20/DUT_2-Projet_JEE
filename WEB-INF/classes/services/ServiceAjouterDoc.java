@@ -33,7 +33,7 @@ public class ServiceAjouterDoc extends HttpServlet {
         	m.newDocument(type,descriptions);
 
         	request.setAttribute("msg", "Le document "+ descriptions[0]+"a bien été ajouter !");
-        	this.getServletContext().getRequestDispatcher( "/accueil.jsp" ).forward( request, response );
+        	this.getServletContext().getRequestDispatcher( "/accueil.jsp" ).forward( request, response );	
         } catch(Exception e) {
         	request.setAttribute("msg", "impossible d'ajouter le document");
         	this.getServletContext().getRequestDispatcher( "/accueil.jsp" ).forward( request, response );
