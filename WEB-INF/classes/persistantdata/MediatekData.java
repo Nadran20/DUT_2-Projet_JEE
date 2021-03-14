@@ -128,22 +128,28 @@ public class MediatekData implements PersistentMediatek, PersitantData {
 	// si pas trouvé, renvoie null
 	@Override
 	public Document getDocument(int numDocument) {
-		req="SELECT * FROM Document where idDoc ";
+		req="SELECT * FROM Document where idDoc ="+numDocument;
+		Doc d = null;
+		
 		try {
 			conn = DriverManager.getConnection(DB_URL,USER,PASS);
 			stmt  = conn.createStatement();
 			
 			rs= stmt.executeQuery(req);
 			
+			while(rs.next()) {
+				d = new Doc(Integer.parseInt(rs.getString("idDoc")),rs.getString("titre"), rs.getString("auteur"), Integer.parseInt(rs.getString("type")), 1);
+			}
+			
 			stmt.close();
 			conn.close();
 			rs.close();
+			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		if(rs==null) return null;
-		else return (Document) rs;
+		return d;
 	}
 
 	// ajoute un nouveau document - exception à définir
