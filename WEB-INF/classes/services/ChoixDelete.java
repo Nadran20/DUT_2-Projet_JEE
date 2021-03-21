@@ -18,7 +18,7 @@ import mediatek2021.Mediatek;
 @WebServlet("/ChoixDelete")
 public class ChoixDelete extends HttpServlet {
 	
-private static Mediatek m;
+	private static Mediatek m;
 	
 	static {
 		m = Mediatek.getInstance();

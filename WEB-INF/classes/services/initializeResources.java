@@ -19,13 +19,12 @@ public class initializeResources extends HttpServlet {
     }
     
     public void init() throws ServletException {
-    try {
-        Class.forName("persistantdata.MediatekData");
-    } catch (ClassNotFoundException e) {
-        // TODO Auto-generated catch block
-        e.printStackTrace();
-    }
-    System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
+	    try {
+	        Class.forName("persistantdata.MediatekData");
+	    } catch (ClassNotFoundException e) {
+	        // TODO Auto-generated catch block
+	        e.printStackTrace();
+	    }
     }
 
 }

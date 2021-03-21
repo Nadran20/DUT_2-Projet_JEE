@@ -34,9 +34,6 @@ public class ServiceConnexion extends HttpServlet {
         String mdp = request.getParameter("mdp");
         PrintWriter out = response.getWriter();
         HttpSession session = request.getSession(true);
-        
-        out.println(login);
-        out.println(mdp);
         Utilisateur user = null;
 
         try {
